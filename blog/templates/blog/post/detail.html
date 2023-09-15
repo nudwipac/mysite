@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %} #Call Master page
+
+{% block title %} {{ post.title }} {% endblock %}
+{% block content %}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>{{ post.title }}</h3>
+            <small>{{ post.publish }} BY {{ post.author }}</small>
+            <p class="mt-4">{{ post.body }}</p>
+        </div>
+    </div>
+{% endblock %}
